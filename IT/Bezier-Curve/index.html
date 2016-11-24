@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>Bezier Curve | JcYee&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Bezier Curve Problem.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bezier Curve">
+<meta property="og:url" content="http://yoursite.com/IT/Bezier-Curve/index.html">
+<meta property="og:site_name" content="JcYee's Blog">
+<meta property="og:description" content="Bezier Curve Problem.">
+<meta property="og:image" content="http://www.zheng-hang.com/zb_users/upload/2015/04/201504121428776867406226.png">
+<meta property="og:image" content="http://www.zheng-hang.com/zb_users/upload/2015/04/201504121428777915191225.jpg">
+<meta property="og:updated_time" content="2016-11-14T03:31:10.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Bezier Curve">
+<meta name="twitter:description" content="Bezier Curve Problem.">
+<meta name="twitter:image" content="http://www.zheng-hang.com/zb_users/upload/2015/04/201504121428776867406226.png">
+  
+    <link rel="alternative" href="/atom.xml" title="JcYee&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/github.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/avatar.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">JcYee</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">读书立人，读写人生</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						<li>Links</li>
+						
+						
+						<li>About</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags">标签云</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/VelocityLight/" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/VelocityLight" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://blog.csdn.net/yeah_sir/article/" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/xie-yun-chen" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Bezier-Curve/" style="font-size: 10px;">Bezier Curve</a> <a href="/tags/Github/" style="font-size: 13.33px;">Github</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/MacOs/" style="font-size: 10px;">MacOs</a> <a href="/tags/Nav/" style="font-size: 10px;">Nav</a> <a href="/tags/gitcafe迁移/" style="font-size: 10px;">gitcafe迁移</a> <a href="/tags/三星半/" style="font-size: 10px;">三星半</a> <a href="/tags/书评/" style="font-size: 10px;">书评</a> <a href="/tags/五星/" style="font-size: 10px;">五星</a> <a href="/tags/伯克利演讲/" style="font-size: 10px;">伯克利演讲</a> <a href="/tags/四星/" style="font-size: 10px;">四星</a> <a href="/tags/四星半/" style="font-size: 16.67px;">四星半</a> <a href="/tags/工作/" style="font-size: 10px;">工作</a> <a href="/tags/日剧/" style="font-size: 20px;">日剧</a> <a href="/tags/移动机器人/" style="font-size: 10px;">移动机器人</a> <a href="/tags/致毕业生/" style="font-size: 10px;">致毕业生</a> <a href="/tags/规划/" style="font-size: 13.33px;">规划</a> <a href="/tags/问题/" style="font-size: 13.33px;">问题</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.codingyun.com/">Coding云</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/yeah_sir/article/">CSDN</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">读书的IT工程狮  逗比乐天派</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">JcYee</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/avatar.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">JcYee</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">读书立人，读写人生</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags">标签云</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/VelocityLight/" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/VelocityLight" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://blog.csdn.net/yeah_sir/article/" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/xie-yun-chen" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-Bezier-Curve" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/IT/Bezier-Curve/" class="article-date">
+  	<time datetime="2016-03-11T15:28:40.000Z" itemprop="datePublished">2016-03-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Bezier Curve
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bezier-Curve/">Bezier Curve</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/IT/">IT</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Bezier Curve Problem.<a id="more"></a></p>
+<h1 id="Bezier-Curve"><a href="#Bezier-Curve" class="headerlink" title="Bezier Curve"></a>Bezier Curve</h1><p>[TOC]</p>
+<h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><blockquote>
+<ul>
+<li>折线平滑为贝塞尔曲线</li>
+<li>曲率连续</li>
+</ul>
+</blockquote>
+<h2 id="Before"><a href="#Before" class="headerlink" title="Before"></a>Before</h2><p>平面上已知n+1个数据点Pi(xi, yi), i = 0, 1, 2, … , n 。在相邻两点Pi和Pi+1之间使用三次Bezier曲线连接。</p>
+<blockquote>
+<p><strong>解析:</strong></p>
+<ul>
+<li>四个控制点确定三次贝塞尔曲线，除起点终点外还有两个控制点，如何确定?</li>
+<li>第一条和最后一条线段的贝塞尔曲线</li>
+<li>使曲率连续</li>
+</ul>
+</blockquote>
+<h2 id="Solve"><a href="#Solve" class="headerlink" title="Solve"></a>Solve</h2><p>曲率连续及控制点求解：<br><img src="http://www.zheng-hang.com/zb_users/upload/2015/04/201504121428776867406226.png" alt="\[参考文献\]"><br><br><br>第一条和最后一条线段：<br><img src="http://www.zheng-hang.com/zb_users/upload/2015/04/201504121428777915191225.jpg" alt="enter image description here"><br>使用第一种方法：<br>$ A_0:(x_0 + a(x_1 - x_0), y_0 + b(y_1 - y<em>0)) $<br>$ B</em>{n-1}:(x_n - a(x<em>n - x</em>{n-1}), y_n - b(y<em>n - y</em>{n-1})$<br>其中a，b为任意正整数</p>
+<h2 id="绘制曲线："><a href="#绘制曲线：" class="headerlink" title="绘制曲线："></a>绘制曲线：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">typedef struct point&#123;</div><div class="line">    double x, y;</div><div class="line">&#125; Geometry_Point;</div><div class="line">//插值</div><div class="line">void lerp(Geometry_Point &amp;dest, Geometry_Point a, Geometry_Point b, double t) &#123;</div><div class="line">    dest.x = a.x + (b.x - a.x) * t;</div><div class="line">    dest.y = a.y + (b.y - a.y) * t;</div><div class="line">&#125;</div><div class="line">//根据t得出像素坐标dest,t范围为[0,1]</div><div class="line">void bezier(Geometry_Point &amp;dest, Geometry_Point a, Geometry_Point b,</div><div class="line">            Geometry_Point c, Geometry_Point d,  double t) &#123;</div><div class="line">    Geometry_Point ab, bc, cd, abbc, bccd;</div><div class="line">    lerp(ab, a, b, t); //point between a and b</div><div class="line">    lerp(bc, b, c, t);</div><div class="line">    lerp(cd, c, d, t);</div><div class="line">    lerp(abbc, ab, bc, t);</div><div class="line">    lerp(bccd, bc, cd, t);</div><div class="line">    lerp(dest, abbc, bccd, t); //point on bezier-curve</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="关于曲率连续："><a href="#关于曲率连续：" class="headerlink" title="关于曲率连续："></a>关于曲率连续：</h2><p>上述的方法使得曲线的切线斜率连续。在多数的情况下，我们常常需使得曲率也连续，即二阶导相等。<br>此时不仅要求$B_{i-1}$和$A_i$都在$P<em>i$所做的切线上，还需满足如下等式：<br>$$ (\frac{\overline{B</em>{i-1}P_i}}{\overline{P_iA<em>i}})^2 = \frac{\overline{A</em>{i-1}B<em>{i-1}}*\sin\angle{A</em>{i-1}B_{i-1}P_i}}{\overline{A_iB_i} * \sin\angle{P_iA_iB_i}} , i=1, 2, 3, …, n-1$$<br>此时需要使用迭代的方法，反复迭代最终达到收敛，从而得到控制点。</p>
+<p><br><br>感谢阅读这份文档, Thanks。<br>这是一个贝塞尔绘制示例脚本。请点击 <a href="http://myst729.github.io/bezier-curve/" target="_blank" rel="external">曲线绘制</a><br><br></p>
+
+      
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/IT/Problem-Thinking/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Problem-Thinking
+        
+      </div>
+    </a>
+  
+  
+    <a href="/IT/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt" style="margin-left:30px; margin-bottom:10px; font-size:20px">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Bezier-Curve" data-title="Bezier Curve" data-url="http://yoursite.com/IT/Bezier-Curve/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"VelocityLight"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 JcYee
+    	</div>
+      	<div class="footer-right">
+      		<a href="https://github.com/VelocityLight/" target="_blank">Github Address</a> by VelocityLight
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<div id="totop" style="position:fixed;bottom:100px;right:25px;cursor: pointer;">
+   <a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script src="/js/totop.js"></script>
+
+  </div>
+</body>
+</html>
