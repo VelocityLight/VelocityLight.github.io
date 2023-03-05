@@ -1,0 +1,28 @@
+remote_theme: mmistakes/minimal-mistakes
+
+# 站点配置
+title: VelocityLight's Blog
+description: My Work & Life Balance
+url: "https://VelocityLight.github.io" # 网站的地址
+baseurl: "" # 一般不需要修改
+
+# Minimal Mistakes 主题的配置
+minimal_mistakes_skin: "contrast"
+minimal_mistakes_sidebar: true
+minimal_mistakes_social_links:
+  email: yjchit@126.com
+  github: VelocityLight
+  # ... 其他社交媒体链接
+
+# Posts 和 Images 的路径配置
+defaults:
+  - scope:
+      path: "posts"
+      type: "posts"
+    values:
+      image_dir: "/images"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      image_dir: "/images"
