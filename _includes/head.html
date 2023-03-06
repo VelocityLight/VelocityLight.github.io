@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if page.title %}
+    <title>{{ page.title | escape }}</title>
+  {% else %}
+    <title>{{ site.title | escape }}</title>
+  {% endif %}
+  {% if page.description %}
+    <meta name="description" content="{{ page.description | escape }}">
+  {% else %}
+    <meta name="description" content="{{ site.description | escape }}">
+  {% endif %}
+  {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords | join: ',' }}">
+  {% else %}
+    <meta name="keywords" content="{{ site.keywords | join: ',' }}">
+  {% endif %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+</head>
+<body>
+
+<!-- 使用了 Jekyll 的 Liquid 标记和 relative_url 过滤器来获取 JavaScript 脚本文件的相对路径，并将相对路径转换成绝对路径 -->

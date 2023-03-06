@@ -42,6 +42,8 @@ http://127.0.0.1:4000/
 ├── _data
 ├── _pages          # Category pages such as TAG & directories
 ├── _posts          # Personal blog articles
+├── _includes       # Store common HTML fragments, this project is used to ensure that your website page title and meta description tags are valid and contain relevant keywords to improve search engine rankings
+├── robots.txt      # Tell the search engine which pages can be indexed, and all configurations in this project can be indexed
 ├── assets          # Static files, including images, etc.
 └── index.html
 ```
