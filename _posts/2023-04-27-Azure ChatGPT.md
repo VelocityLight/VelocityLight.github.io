@@ -18,34 +18,34 @@ https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?redirect_u
 ```
 
 如果没有微软账号可以快速用个人邮箱注册一个，已有账号（可以用自己常用 Windows 系统微软账号）直接登陆即可。登陆后进入如下页面：
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/GI9iaFcKKibicUpMjGjORPrz13RkGzn8xKHfyNFSWO0b0pic8Fqo6ic85JaFF95wKwFVic8ibWMx0P43mpWicibYY8umI7g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="/assets/images/Azure-ChatGPT/1.png"/>
 
 可以看到 “从 Azure 免费使用版开始”，点击 “开始” 即可看到支持的免费服务了。
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/GI9iaFcKKibicUpMjGjORPrz13RkGzn8xKHKOI5WydBsLeDV91UzfsicGPZKmczFtpNv0bXx5Pdzn5Lpw62q3CNPEg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="/assets/images/Azure-ChatGPT/2.png"/>
 
 点击 “免费开始使用”，输入姓名 & 电话 & 地址，完成短信验证码验证：
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/GI9iaFcKKibicUpMjGjORPrz13RkGzn8xKHKBvXtWNsglWfF7V1PPzbLMiaqvM9icIUuGMTJMMabAqqp2XDcib6gBOuA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="/assets/images/Azure-ChatGPT/3.png"/>
 
 输入 Visa 或万事达的信用卡或借记卡相关信息，即可开始免费使用 (在赠金 200 美元用完后，Azure 将询问是否想要继续使用即用即付模式，不用担心免费额度外还有其它费用问题) ：
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/GI9iaFcKKibicUpMjGjORPrz13RkGzn8xKHtcpPUStytTAiciatrlheuEkoiaqyUeUeO3KKJUHAjwwQlDm5O7TR8VvHw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="/assets/images/Azure-ChatGPT/4.png"/>
 
 下面我们以 ChatGPT 服务为例展示云服务的使用过程。
 
 ## 创建 ChatGPT 云资源
 在搜索栏搜索 “OpenAI” 进入云服务，找到 “创建”：
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/GI9iaFcKKibicUpMjGjORPrz13RkGzn8xKHlz2dMxmQyZFE7qk47FlXff88qVyfls8x0j9EibbES5bk0UCiazefQCibw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="/assets/images/Azure-ChatGPT/5.png"/>
 
 按提示填写：基本信息、网络等配置，即可完成资源创建：
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/GI9iaFcKKibicUpMjGjORPrz13RkGzn8xKHFLucqF7zAGLlgrpqCkFMMkoxJSYCuysSRC9Rh0oqhy6kXB3ZYNnC0w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="/assets/images/Azure-ChatGPT/6.png"/>
 
 稍等三分钟后创建完毕，再进入资源，可以看见如上操作引导了：
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/GI9iaFcKKibicUpMjGjORPrz13RkGzn8xKHVnGKINg1icSJ6XUcWibjssIMudtg3jx6oSn4rJOcfTJ1oxCicaZQ1JOLw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="/assets/images/Azure-ChatGPT/7.png"/>
 
 首先点击进入 OpenAI Studio 页面，找到 “部署”，部署一个你所需的模型，包括 gpt-3.5-turbo 等 OpenAI 已支持的模型列表，这过程只需几秒钟完成：
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/GI9iaFcKKibicUpMjGjORPrz13RkGzn8xKHZTFImUb2pzNgffBTELiajcnN85gpta57r2MLXFBEE2m61rLrFiacksAw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="/assets/images/Azure-ChatGPT/8.png"/>
 
 而后就可以直接开始使用了，进入 “聊天”，开始愉快的和 ChatGPT 聊天吧～ 支持动态调整参数，示例如下：
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/GI9iaFcKKibicUpMjGjORPrz13RkGzn8xKHEpCQNRdAwXHRPR9cIJF9GYNwibkocJrfyXuEZJ1dNnyZ53iaNcnZJddw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="/assets/images/Azure-ChatGPT/9.png"/>
 
 ## 代码调用 API
 如果你想通过代码调用 Azure OpenAI ChatGPT，下面以 Golang 为例展示通过代码连接 & 测试过程。
@@ -146,10 +146,10 @@ cfg.Token 即 “资源密钥” (密钥 1 或 密钥 2 均可)，cfg.BaseUrl �
 
 cfg.APIType 默认值是 “Azure”，cfg.APIVersion 默认值是 “2023-03-15-preview” （如果你用的也是 gpt-3.5-turbo）, cfg.Engine 是前面你部署的模型自己设定的名字。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/GI9iaFcKKibicUpMjGjORPrz13RkGzn8xKHZ5xrRNpaiaibSJlelt6OTI1AwQsxgtP0oPw42ndZzIsRW4NByajLeutw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="/assets/images/Azure-ChatGPT/10.png"/>
 
 发起测试看看，让 ChatGPT 给我们写首诗：
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/GI9iaFcKKibicUpMjGjORPrz13RkGzn8xKH3lJ7wBNZ9o8ibz1iaqKXEc2ZDJxyOYht9mFJY3amiaA8sQ8vgRBTVgicWw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="/assets/images/Azure-ChatGPT/11.png"/>
 
 这首诗感觉如何？哈哈哈哈。
 
