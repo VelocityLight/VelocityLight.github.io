@@ -23,7 +23,7 @@ github_username: VelocityLight
 search: true
 
 # Build settings
-remote_theme: mmistakes/minimal-mistakes@4.24.0
+remote_theme: mmistakes/so-simple-theme@3.2.0
 minimal_mistakes_skin: air
 markdown: kramdown
 # Outputting
@@ -73,6 +73,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/VelocityLight"
+    - label: "WeChat"
+      icon: "fab fa-fw fa-weixin"
+      url: "https://github.com/VelocityLight.github.io/assets/wechat/wechat.jpg"
 
 defaults:
   # _posts
