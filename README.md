@@ -52,5 +52,6 @@ http://127.0.0.1:4000/
 The theme used in this project:
 - https://github.com/mmistakes/minimal-mistakes
 - Template reference: https://github.com/mmistakes/mm-github-pages-starter
+- https://github.com/mmistakes/so-simple-theme/blob/master/example/_config.yml
 
 Feel free to contact me on Github, Have A Nice Day!

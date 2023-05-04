@@ -53,5 +53,6 @@ http://127.0.0.1:4000/
 此项目中引用主题:
 - https://github.com/mmistakes/minimal-mistakes
 - 模版参考: https://github.com/mmistakes/mm-github-pages-starter
+- https://github.com/mmistakes/so-simple-theme/blob/master/example/_config.yml
 
 欢迎在 Github 上联系我，Have A Nice Day！
