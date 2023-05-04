@@ -23,8 +23,10 @@ github_username: VelocityLight
 search: true
 
 # Build settings
-remote_theme: mmistakes/so-simple-theme@3.2.0
-minimal_mistakes_skin: air
+# remote_theme: mmistakes/minimal-mistakes@4.24.0
+# minimal_mistakes_skin: air
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+skin: "/assets/css/skins/default.css"
 markdown: kramdown
 # Outputting
 permalink: /:categories/:title/
