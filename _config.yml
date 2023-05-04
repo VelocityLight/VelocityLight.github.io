@@ -64,6 +64,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/VelocityLight"
+    - label: "WeChat"
+      icon: "fab fa-fw fa-weixin"
+      url: "https://github.com/VelocityLight.github.io/assets/wechat/wechat.jpg"
 
 footer:
   links:
