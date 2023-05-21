@@ -16,8 +16,8 @@ Azure 在 5.11 举办了 App Innovation with Azure Openai In-A-Day Workshop 活�
 ## 异同
 | 特性 | OpenAI | Azure OpenAI |
 | ---- | ---- | ---- |
-| 模型种类 | 语言、视觉、语音… |
-| 价格 | 按标记 (token) 数量进行收费 |
+| 模型种类 | 语言、视觉、语音… | 同 |
+| 价格 | 按标记 (token) 数量进行收费 | 同 |
 | 最新模型 | 首先发布 | 延后一段时间发布，完善安全性，合规性等 |
 | 安全性及数据隐私 | 基本安全性 | 企业级安全性、RBAC、客户管理密钥 |
 | 合规 | 不提供 | SOC2, ISO, HIPAA, CSA STAR |
